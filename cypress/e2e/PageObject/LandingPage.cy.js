@@ -20,7 +20,7 @@ describe('landingPage', () => {
       .and('have.attr','type','submit').click()
       reg.username().type(dt.name)
       .should('have.value',dt.name)
-      //reg.email().type(dt.email)
+      reg.email().type(dt.email)
       .should('have.value',dt.email)
       reg.submitbtn().should('have.attr','value','Register')
       .and('have.attr','type','submit').click()
